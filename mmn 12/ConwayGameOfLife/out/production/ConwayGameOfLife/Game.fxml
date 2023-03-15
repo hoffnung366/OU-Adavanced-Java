@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <children>
+      <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#nextGenerationButtonPressed" text="Next generation" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+      <Canvas fx:id="canvas" height="400.0" width="600.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Canvas>
+   </children>
+</VBox>
