@@ -1,2 +1,4 @@
 # OU-Adavanced-Java
-Assignments from the course 20554 on 2022a (Open University)
+mmn 11
+  DrawRandomShapes - JavaFX application that displays a drawing consisting of ten shapes with random shapes and color
+  GuessTheWorld - 
