@@ -1,0 +1,17 @@
+1. Write a generic AssociationTable class that implements a sorted associative table (in ascending order) intended for storing pairs of members where each pair consists of a key and a value. The key type will be some comparable type, that is, a type that implements the <Comparable<T interface
+Whereas the value type can be any type (all values are of the same type).
+The class will include two constructors, one creates an empty table and the other receives an array of keys and an array of values where each element in the array of keys will be related to the corresponding element in the array of values.
+The elements in the key array are not arranged in any order. The constructor exports a sorted associative table. In case there are equal keys, the last value will replace the previous value. In case the arrays are not equal in size, an exception of the IllegalArgumentException type must be raised (you must define this class as a subclass of Exception)
+The department will include the following actions:
+- add -
+An operation that receives a key and a value and adds them to the sorted table in their appropriate place
+If the key already exists in the table, the value associated with it must be updated.
+- get - an operation that receives a key and returns the value associated with the received key. In case the key does not exist, null must be returned
+- contains - a boolean operation that receives a key and checks if it is in the table
+- remove - a Boolean operation that receives a key and removes the key and its associated value from the table. The operator returns true if the key was in the table and the pair was successfully removed otherwise false is returned
+- size - an operation that returns the number of pairs in the table
+- keyIterator - an operation that returns an Iterator that allows traversing the table's keys. The keys will be received in order of sorting.
+Implement the sorted table using the java.util.TreeMap class
+2. Check the generic class AssociationTable for keys of type Student and values of type String
+Define an appropriate department for Student that will include details such as first name, last name, 17th grade and year of birth. The comparison between the employees must be made according to the 17. The value of type String will represent the phone number of the student.
+Write in a separate department a main program that creates a table with 3 students as you wish. Add a new student, update a phone and delete an existing student. Finally, show the sorted list of students in the standard output.
