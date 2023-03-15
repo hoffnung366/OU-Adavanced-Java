@@ -1,0 +1,9 @@
+Write a system that performs a parallel sort-merge of an array of integers of length
+The sort-merge algorithm will be performed as follows:
+- The array will be divided into n arrays with a single element that will be allocated to a common pool
+- The system will create m merging processes that will run in parallel. Each process will remove two arrays from the database, merge them and return to the database one array that is the merger of the two arrays
+- The merging processes will continue to merge pairs of arrays until all the arrays are merged in the buffer
+A single array will remain which is the sorted array.
+- Finally, the sorted array must be displayed
+- The user must be allowed to provide values for n and m (the number of array members and the number of processes).
+The elements of the array will be random numbers in the range 1..100)
