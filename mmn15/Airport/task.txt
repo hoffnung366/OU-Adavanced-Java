@@ -1,0 +1,21 @@
+Write an application that simulates takeoffs and landings of airplanes at an airport.
+The system will consist of the following elements:
+1. An airport that is initialized with a name, and a number of routes and includes the following methods:
+- depart - The method receives the number of the flight requesting to take off and returns the number of an available route from which it is possible to take off.
+In case there is no available track, the method will delay the applicant until a track becomes available
+- land - The method receives the number of the flight requesting to land and returns the number of an available route where it is possible to land. In the event that there is no available track, the method will delay the applicant until a track becomes available.
+- freeRunway - a method used to release a runway that was used for take-off or landing. The method receives the flight number and the route number that was vacated
+Remarks:
+- You must exercise the allocation of routes at the airport so that the take-off and landing events receive routes according to the order in which they entered the field
+- Please note that all runways are used for both takeoff and landing
+2. A class representing a flight: the constructor receives the flight number, the airport from which to take off and the field where to land. This class is defined as a process (Thread) that performs the following actions:
+- Turns to the depart method in the source field and receives a free route
+- Performs a simulation of the appearance using a random delay of seconds (for example between 2 and 5)
+- Turns to the field and releases the route
+- Pauses itself for the duration of the flight (random time of a few seconds at your discretion)
+- Turns to the landing method (land) in the destination field and receives a free route
+- Performs a landing simulation using a random delay of seconds (for example between 2 and 5)
+- Turns to the field and releases the route
+3. A main class that performs a simulation of take-offs and landings at an airport.
+  The program will create two airports with 3 runways each, and ten flights between the two fields (the directions of the flights will be randomly drawn)
+System activity must be monitored using appropriate printouts
