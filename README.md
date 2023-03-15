@@ -7,6 +7,9 @@ mmn 12
   ConwayGameOfLife - JavaFX application that provide simulation model of the life cycle of the living organism
 
 mmn 14
-  AssociationTable - 
+  AssociationTable - Association Table that can contain generic contents in sorted order of its keys
+  
+mmn 15
+  
 
 The directory is in fact an IntelliJ IDEA project.
