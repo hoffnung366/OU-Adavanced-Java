@@ -1,0 +1,7 @@
+Write a JavaFX application that displays a drawing consisting of ten shapes with random properties as follows:
+- the shapes will be of type squares, ellipses and lines
+- their color will be determined randomly
+- the size of the shapes in pixels will be limited so that the width (and height) of their bounding rectangle is less than a quarter of the width (and height) of the drawing surface
+- the position of the shapes will be randomly determined according to the width and height of the drawing surface
+- there is no need to ensure that the shapes appear in their entirety within the drawing area
+- there is no need to prevent shapes from hiding each other
